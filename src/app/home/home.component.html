@@ -27,3 +27,19 @@
       </tr>
     </tbody>
   </table>
+
+<button (click)="aumentarEdad()">Aumentar</button>
+<button (click)="disminuirEdad()">disminuir</button>
+
+  <h3
+  [style.background]="edad >= 18 ? 'green' : 'red'" 
+  [style.color]="'white'">Tu edad es {{edad}}
+</h3>
+
+  <div *ngIf="edad >=18">
+    eres mayor de edad
+  </div>
+
+  <div *ngIf="edad < 18">
+    eres menor de edad
+  </div>

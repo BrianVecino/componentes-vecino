@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+           edad: number;
+           constructor(){
+            this.edad =18;
+           }
 
+           ngOninit (): void{
+                console.log ('componente cargado')
+           }
+
+           aumentarEdad(){
+            this.edad++
+           }
+           disminuirEdad(){
+            this.edad--
+           }
 }
