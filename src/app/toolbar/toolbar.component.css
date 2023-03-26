@@ -1,0 +1,5 @@
+header {
+    background-color: rgb(0, 0, 0);
+    height: var(--toolbar-height);
+    color: rgb(235, 6, 6);
+}
